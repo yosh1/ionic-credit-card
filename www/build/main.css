@@ -25756,6 +25756,15 @@ ion-grid.cardOFF .msg {
   margin: 5%;
 }
 
+.dot {
+  height: 8px;
+  width: 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
 .ON {
   height: 8px;
   width: 8px;
@@ -25879,106 +25888,6 @@ page-dark .chip img {
   padding-top: 5%;
   border-radius: 10% !important;
   overflow: hidden;
-}
-
-page-private ion-grid.cardON {
-  background-color: #4284ff;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 15px;
-  max-width: 400px !important;
-}
-
-page-private ion-grid.cardON .msg {
-  background-color: #679cff;
-}
-
-page-private ion-grid.cardOFF {
-  background-color: #bbb7b7;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 15px;
-  max-width: 400px !important;
-}
-
-page-private ion-grid.cardOFF .msg {
-  background-color: #d4d4d4;
-}
-
-page-private .msg {
-  float: left;
-  padding: 5px;
-  padding-right: 8px;
-  padding-left: 8px;
-  font-size: 0.8em;
-  color: white;
-  border-radius: 5px;
-}
-
-page-private .number {
-  color: white;
-  font-size: 1.5em;
-  line-height: 2em;
-  text-align: center;
-}
-
-page-private .digits {
-  padding-right: 5%;
-  padding-left: 5%;
-}
-
-page-private .date {
-  color: white;
-  font-size: 0.8em;
-}
-
-page-private .bank {
-  text-align: right;
-  color: white;
-  font-size: 0.8em;
-}
-
-page-private .brand {
-  max-width: 40%;
-  float: right;
-}
-
-page-private .ON {
-  height: 8px;
-  width: 8px;
-  background-color: #8de278;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 2px;
-}
-
-page-private .OFF {
-  height: 8px;
-  width: 8px;
-  background-color: #fb5f5f;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 2px;
-}
-
-page-private .dot {
-  height: 8px;
-  width: 8px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  margin-bottom: 4px;
-}
-
-page-private .chip img {
-  max-width: 50px;
-  padding-top: 5%;
-  border-radius: 10% !important;
-  overflow: hidden;
-}
-
-page-private ion-icon#power {
-  font-size: 2em;
 }
 
 page-sliding .list-md ion-item-options {

@@ -38,6 +38,8 @@
     animation-duration: 750ms;
   }
 
+
+
   ion-grid.cardON {
     background-color: #4284ff;
     border-radius: 10px;
@@ -90,6 +92,16 @@ ion-grid.cardOFF {
     font-size: 0.8em;
     margin: 5%;
 }
+
+.dot {
+    height: 8px;
+    width: 8px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    display: inline-block;
+    margin-bottom: 4px;
+}
+
 .ON {
     height: 8px;
     width: 8px;
