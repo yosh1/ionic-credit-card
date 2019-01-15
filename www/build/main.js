@@ -42,9 +42,8 @@ webpackEmptyAsyncContext.id = 149;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__home_home__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__private_private__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__minimal_minimal__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sliding_sliding__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__contact_contact__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__minimal_minimal__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__sliding_sliding__ = __webpack_require__(197);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -59,17 +58,15 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
-
 var TabsPage = /** @class */ (function () {
     function TabsPage() {
-        this.tab1Root = __WEBPACK_IMPORTED_MODULE_1__home_home__["a" /* HomePage */];
-        this.tab2Root = __WEBPACK_IMPORTED_MODULE_2__private_private__["a" /* PrivatePage */];
-        this.tab4Root = __WEBPACK_IMPORTED_MODULE_3__minimal_minimal__["a" /* MinimalPage */];
-        this.tab5Root = __WEBPACK_IMPORTED_MODULE_4__sliding_sliding__["a" /* SlidingPage */];
-        this.tab6Root = __WEBPACK_IMPORTED_MODULE_5__contact_contact__["a" /* ContactPage */];
+        this.home = __WEBPACK_IMPORTED_MODULE_1__home_home__["a" /* HomePage */];
+        this.private = __WEBPACK_IMPORTED_MODULE_2__private_private__["a" /* PrivatePage */];
+        this.minimal = __WEBPACK_IMPORTED_MODULE_3__minimal_minimal__["a" /* MinimalPage */];
+        this.sliding = __WEBPACK_IMPORTED_MODULE_4__sliding_sliding__["a" /* SlidingPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/tabs/tabs.html"*/'<ion-tabs>\n    <ion-tab [root]="tab1Root" tabIcon="card"></ion-tab>\n    <ion-tab [root]="tab2Root" tabIcon="lock"></ion-tab>\n    <ion-tab [root]="tab4Root" tabIcon="cut"></ion-tab>\n    <ion-tab [root]="tab5Root" tabIcon="finger-print"></ion-tab>\n    <ion-tab [root]="tab6Root" tabIcon="information-circle"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/tabs/tabs.html"*/'<ion-tabs>\n    <ion-tab [root]="home" tabIcon="card"></ion-tab>\n    <ion-tab [root]="private" tabIcon="lock"></ion-tab>\n    <ion-tab [root]="minimal" tabIcon="cut"></ion-tab>\n    <ion-tab [root]="sliding" tabIcon="finger-print"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -218,73 +215,6 @@ var PrivatePage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DarkPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var DarkPage = /** @class */ (function () {
-    function DarkPage(navCtrl) {
-        this.navCtrl = navCtrl;
-        this.cards = [
-            {
-                state: 'ON',
-                logo: "assets/img/visa.png",
-                a: 1234,
-                b: 5522,
-                c: 8432,
-                d: 2264,
-                expires: '7/12',
-                bank: 'Bank of America'
-            },
-            {
-                state: 'OFF',
-                logo: "assets/img/american.png",
-                a: 1234,
-                b: 5321,
-                c: 8283,
-                d: 9271,
-                expires: '8/19',
-                bank: 'JPMorgan'
-            },
-            {
-                state: 'ON',
-                logo: "assets/img/mastercard.png",
-                a: 8685,
-                b: 2445,
-                c: 9143,
-                d: 7846,
-                expires: '11/23',
-                bank: 'CityBank'
-            }
-        ];
-    }
-    DarkPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-dark',template:/*ion-inline-start:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/dark/dark.html"*/'<ion-content color=red padding>\n  <div *ngFor="let card of cards">\n    <ion-grid [class.cardON]="card.state==\'ON\'" [class.cardOFF]="card.state==\'OFF\'">\n      <ion-row>\n        <ion-col class="state">\n          <div class="msg">\n            <span [class.ON]="card.state==\'ON\'" [class.OFF]="card.state==\'OFF\'"></span> Card {{card.state}}\n          </div>\n        </ion-col>\n        <ion-col class="logo">\n          <img class="brand" [src]="card.logo">\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="chip">\n          <img src="assets/img/chip.png">\n        </ion-col>\n      </ion-row>\n      <ion-row class="digits">\n        <ion-col class="number">\n          {{card.a}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.b}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.c}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.d}}\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="date">\n          Expires: {{card.expires}}\n        </ion-col>\n        <ion-col class="bank">\n          {{card.bank}}\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>'/*ion-inline-end:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/dark/dark.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
-    ], DarkPage);
-    return DarkPage;
-}());
-
-//# sourceMappingURL=dark.js.map
-
-/***/ }),
-
-/***/ 197:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MinimalPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
@@ -348,7 +278,7 @@ var MinimalPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 198:
+/***/ 197:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -423,7 +353,7 @@ var SlidingPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 199:
+/***/ 198:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -458,13 +388,13 @@ var ContactPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 200:
+/***/ 199:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(201);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(223);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(200);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(222);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -472,7 +402,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 223:
+/***/ 222:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -480,13 +410,13 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(266);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(265);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_private_private__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_dark_dark__ = __webpack_require__(196);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_minimal_minimal__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_sliding_sliding__ = __webpack_require__(198);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_contact_contact__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_dark_dark__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_minimal_minimal__ = __webpack_require__(196);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_sliding_sliding__ = __webpack_require__(197);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_contact_contact__ = __webpack_require__(198);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_tabs_tabs__ = __webpack_require__(193);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_splash_screen__ = __webpack_require__(192);
@@ -555,7 +485,7 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 266:
+/***/ 265:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -599,7 +529,74 @@ var MyApp = /** @class */ (function () {
 
 //# sourceMappingURL=app.component.js.map
 
+/***/ }),
+
+/***/ 273:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return DarkPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var DarkPage = /** @class */ (function () {
+    function DarkPage(navCtrl) {
+        this.navCtrl = navCtrl;
+        this.cards = [
+            {
+                state: 'ON',
+                logo: "assets/img/visa.png",
+                a: 1234,
+                b: 5522,
+                c: 8432,
+                d: 2264,
+                expires: '7/12',
+                bank: 'Bank of America'
+            },
+            {
+                state: 'OFF',
+                logo: "assets/img/american.png",
+                a: 1234,
+                b: 5321,
+                c: 8283,
+                d: 9271,
+                expires: '8/19',
+                bank: 'JPMorgan'
+            },
+            {
+                state: 'ON',
+                logo: "assets/img/mastercard.png",
+                a: 8685,
+                b: 2445,
+                c: 9143,
+                d: 7846,
+                expires: '11/23',
+                bank: 'CityBank'
+            }
+        ];
+    }
+    DarkPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-dark',template:/*ion-inline-start:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/dark/dark.html"*/'<ion-content color=red padding>\n  <div *ngFor="let card of cards">\n    <ion-grid [class.cardON]="card.state==\'ON\'" [class.cardOFF]="card.state==\'OFF\'">\n      <ion-row>\n        <ion-col class="state">\n          <div class="msg">\n            <span [class.ON]="card.state==\'ON\'" [class.OFF]="card.state==\'OFF\'"></span> Card {{card.state}}\n          </div>\n        </ion-col>\n        <ion-col class="logo">\n          <img class="brand" [src]="card.logo">\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="chip">\n          <img src="assets/img/chip.png">\n        </ion-col>\n      </ion-row>\n      <ion-row class="digits">\n        <ion-col class="number">\n          {{card.a}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.b}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.c}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.d}}\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="date">\n          Expires: {{card.expires}}\n        </ion-col>\n        <ion-col class="bank">\n          {{card.bank}}\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>'/*ion-inline-end:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/dark/dark.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+    ], DarkPage);
+    return DarkPage;
+}());
+
+//# sourceMappingURL=dark.js.map
+
 /***/ })
 
-},[200]);
+},[199]);
 //# sourceMappingURL=main.js.map
