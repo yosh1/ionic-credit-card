@@ -2,7 +2,6 @@ import { Component } from '@angular/core';
 
 import { HomePage } from '../home/home';
 import { PrivatePage } from '../private/private';
-import { MinimalPage } from './../minimal/minimal';
 import { SlidingPage } from './../sliding/sliding';
 
 @Component({
@@ -12,7 +11,6 @@ export class TabsPage {
 
   home = HomePage;
   private = PrivatePage;
-  minimal = MinimalPage;
   sliding = SlidingPage;
 
   constructor() {

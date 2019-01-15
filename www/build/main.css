@@ -25674,7 +25674,7 @@ ion-navbar.toolbar {
   min-height: calc(46px + env(safe-area-inset-bottom));
 }
 
-@-webkit-keyframes slideInBothWays {
+@-webkit-keyframes slideIn {
   0% {
     -webkit-transform: translate3d(-100%, 0, 0);
   }
@@ -25686,19 +25686,108 @@ ion-navbar.toolbar {
   }
 }
 
-.slide-in-both-ways {
-  -webkit-animation: slideInBothWays ease-in 1;
-  animation: slideInBothWays ease-in 1;
+.slide-in {
+  -webkit-animation: slideIn ease-in 1;
+  animation: slideIn ease-in 1;
   -webkit-animation-fill-mode: forwards;
   animation-fill-mode: forwards;
   -webkit-animation-duration: 750ms;
   animation-duration: 750ms;
 }
 
-page-contact .contact {
-  text-align: center !important;
-  margin-top: 30%;
-  color: #464646;
+ion-grid.cardON {
+  background-color: #4284ff;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  max-width: 400px !important;
+  height: 220px;
+}
+
+ion-grid.cardON .msg {
+  background-color: #679cff;
+}
+
+ion-grid.cardOFF {
+  background-color: #bbb7b7;
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 15px;
+  max-width: 400px !important;
+  height: 220px;
+}
+
+ion-grid.cardOFF .msg {
+  background-color: #d4d4d4;
+}
+
+.msg {
+  float: left;
+  padding: 5px;
+  padding-right: 8px;
+  padding-left: 8px;
+  font-size: 0.8em;
+  color: white;
+  border-radius: 5px;
+}
+
+.number {
+  color: white;
+  font-size: 1.5em;
+  line-height: 2em;
+  text-align: center;
+}
+
+.digits {
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.date {
+  color: white;
+  font-size: 0.8em;
+  margin: 5%;
+}
+
+.bank {
+  text-align: right;
+  color: white;
+  font-size: 0.8em;
+  margin: 5%;
+}
+
+.ON {
+  height: 8px;
+  width: 8px;
+  background-color: #8de278;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.OFF {
+  height: 8px;
+  width: 8px;
+  background-color: #fb5f5f;
+  border-radius: 50%;
+  display: inline-block;
+  margin-right: 2px;
+}
+
+.brand {
+  max-width: 40%;
+  float: right;
+}
+
+.chip img {
+  max-width: 50px;
+  padding-top: 5%;
+  border-radius: 10% !important;
+  overflow: hidden;
+}
+
+ion-icon#power {
+  font-size: 2em;
 }
 
 page-dark ion-content {
@@ -25790,194 +25879,6 @@ page-dark .chip img {
   padding-top: 5%;
   border-radius: 10% !important;
   overflow: hidden;
-}
-
-page-home ion-grid.cardON {
-  background-color: #4284ff;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 15px;
-  max-width: 400px !important;
-  height: 220px;
-}
-
-page-home ion-grid.cardON .msg {
-  background-color: #679cff;
-}
-
-page-home ion-grid.cardOFF {
-  background-color: #bbb7b7;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 15px;
-  max-width: 400px !important;
-  height: 220px;
-}
-
-page-home ion-grid.cardOFF .msg {
-  background-color: #d4d4d4;
-}
-
-page-home .msg {
-  float: left;
-  padding: 5px;
-  padding-right: 8px;
-  padding-left: 8px;
-  font-size: 0.8em;
-  color: white;
-  border-radius: 5px;
-}
-
-page-home .number {
-  color: white;
-  font-size: 1.5em;
-  line-height: 2em;
-  text-align: center;
-}
-
-page-home .digits {
-  padding-right: 5%;
-  padding-left: 5%;
-}
-
-page-home .date {
-  color: white;
-  font-size: 0.8em;
-  margin: 5%;
-}
-
-page-home .bank {
-  text-align: right;
-  color: white;
-  font-size: 0.8em;
-  margin: 5%;
-}
-
-page-home .ON {
-  height: 8px;
-  width: 8px;
-  background-color: #8de278;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 2px;
-}
-
-page-home .OFF {
-  height: 8px;
-  width: 8px;
-  background-color: #fb5f5f;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 2px;
-}
-
-page-home .brand {
-  max-width: 40%;
-  float: right;
-}
-
-page-home .chip img {
-  max-width: 50px;
-  padding-top: 5%;
-  border-radius: 10% !important;
-  overflow: hidden;
-}
-
-page-home ion-icon#power {
-  font-size: 2em;
-}
-
-page-minimal ion-grid.cardON {
-  background-color: #4284ff;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 15px;
-  max-width: 400px !important;
-}
-
-page-minimal ion-grid.cardON .msg {
-  background-color: #679cff;
-}
-
-page-minimal ion-grid.cardOFF {
-  background-color: #bbb7b7;
-  border-radius: 10px;
-  padding: 10px;
-  margin-bottom: 15px;
-  max-width: 400px !important;
-}
-
-page-minimal ion-grid.cardOFF .msg {
-  background-color: #d4d4d4;
-}
-
-page-minimal .msg {
-  float: left;
-  padding: 5px;
-  padding-right: 8px;
-  padding-left: 8px;
-  font-size: 0.8em;
-  color: white;
-  border-radius: 5px;
-}
-
-page-minimal .number {
-  color: white;
-  font-size: 1.5em;
-  line-height: 2em;
-  text-align: center;
-}
-
-page-minimal .digits {
-  padding-right: 5%;
-  padding-left: 5%;
-}
-
-page-minimal .date {
-  color: white;
-  font-size: 0.8em;
-}
-
-page-minimal .bank {
-  text-align: right;
-  color: white;
-  font-size: 0.8em;
-}
-
-page-minimal .brand {
-  max-width: 40%;
-  float: right;
-}
-
-page-minimal .ON {
-  height: 8px;
-  width: 8px;
-  background-color: #8de278;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 2px;
-}
-
-page-minimal .OFF {
-  height: 8px;
-  width: 8px;
-  background-color: #fb5f5f;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 2px;
-}
-
-page-minimal .dot {
-  height: 8px;
-  width: 8px;
-  background-color: #ffffff;
-  border-radius: 50%;
-  display: inline-block;
-  margin-bottom: 4px;
-}
-
-page-minimal ion-icon#power {
-  font-size: 2em;
 }
 
 page-private ion-grid.cardON {
@@ -26078,95 +25979,6 @@ page-private .chip img {
 
 page-private ion-icon#power {
   font-size: 2em;
-}
-
-page-sliding ion-grid.cardON {
-  background-color: #4284ff;
-  border-radius: 10px;
-  padding: 10px;
-  max-width: 400px !important;
-}
-
-page-sliding ion-grid.cardON .msg {
-  background-color: #679cff;
-}
-
-page-sliding ion-grid.cardOFF {
-  background-color: #bbb7b7;
-  border-radius: 10px;
-  padding: 10px;
-  max-width: 400px !important;
-}
-
-page-sliding ion-grid.cardOFF .msg {
-  background-color: #d4d4d4;
-}
-
-page-sliding .msg {
-  float: left;
-  padding: 5px;
-  padding-right: 8px;
-  padding-left: 8px;
-  font-size: 0.8em !important;
-  color: white;
-  border-radius: 5px;
-}
-
-page-sliding .number {
-  color: white;
-  font-size: 1.5em !important;
-  line-height: 2em !important;
-  text-align: center;
-}
-
-page-sliding .digits {
-  padding-right: 5%;
-  padding-left: 5%;
-}
-
-page-sliding .date {
-  color: white;
-  font-size: 0.8em !important;
-}
-
-page-sliding .bank {
-  text-align: right;
-  color: white;
-  font-size: 0.8em !important;
-}
-
-page-sliding .ON {
-  height: 8px;
-  width: 8px;
-  background-color: #8de278;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 2px;
-}
-
-page-sliding .OFF {
-  height: 8px;
-  width: 8px;
-  background-color: #fb5f5f;
-  border-radius: 50%;
-  display: inline-block;
-  margin-right: 2px;
-}
-
-page-sliding .brand {
-  max-width: 40%;
-  float: right;
-}
-
-page-sliding .chip img {
-  max-width: 50px;
-  padding-top: 5%;
-  border-radius: 10% !important;
-  overflow: hidden;
-}
-
-page-sliding ion-icon#power {
-  font-size: 2em !important;
 }
 
 page-sliding .list-md ion-item-options {

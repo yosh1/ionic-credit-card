@@ -6,9 +6,9 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { PrivatePage } from '../pages/private/private';
 import { DarkPage } from '../pages/dark/dark';
-import { MinimalPage } from './../pages/minimal/minimal';
+
 import { SlidingPage } from './../pages/sliding/sliding';
-import { ContactPage } from '../pages/contact/contact';
+
 
 import { TabsPage } from '../pages/tabs/tabs';
 
@@ -21,9 +21,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     PrivatePage,
     DarkPage,
-    MinimalPage,
     SlidingPage,
-    ContactPage,
     TabsPage
   ],
   imports: [
@@ -36,9 +34,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     HomePage,
     PrivatePage,
     DarkPage,
-    MinimalPage,
     SlidingPage,
-    ContactPage,
     TabsPage
   ],
   providers: [
