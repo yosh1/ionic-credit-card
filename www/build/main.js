@@ -66,7 +66,7 @@ var TabsPage = /** @class */ (function () {
         this.sliding = __WEBPACK_IMPORTED_MODULE_4__sliding_sliding__["a" /* SlidingPage */];
     }
     TabsPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/tabs/tabs.html"*/'<ion-tabs>\n    <ion-tab [root]="home" tabIcon="card"></ion-tab>\n    <ion-tab [root]="private" tabIcon="lock"></ion-tab>\n    <ion-tab [root]="minimal" tabIcon="cut"></ion-tab>\n    <ion-tab [root]="sliding" tabIcon="finger-print"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/tabs/tabs.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/kaino/ionic-credit-card/src/pages/tabs/tabs.html"*/'<ion-tabs>\n    <ion-tab [root]="home" tabIcon="card"></ion-tab>\n    <ion-tab [root]="private" tabIcon="lock"></ion-tab>\n    <ion-tab [root]="minimal" tabIcon="cut"></ion-tab>\n    <ion-tab [root]="sliding" tabIcon="finger-print"></ion-tab>\n</ion-tabs>\n'/*ion-inline-end:"/home/kaino/ionic-credit-card/src/pages/tabs/tabs.html"*/
         }),
         __metadata("design:paramtypes", [])
     ], TabsPage);
@@ -133,7 +133,7 @@ var HomePage = /** @class */ (function () {
     }
     HomePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-home',template:/*ion-inline-start:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/home/home.html"*/'<ion-content padding>\n  <div *ngFor="let card of cards">\n    <ion-grid [class.cardON]="card.state==\'ON\'" [class.cardOFF]="card.state==\'OFF\'">\n      <ion-row>\n        <ion-col class="state">\n          <div class="msg">\n            <span [class.ON]="card.state==\'ON\'" [class.OFF]="card.state==\'OFF\'"></span> Card {{card.state}}\n          </div>\n        </ion-col>\n        <ion-col class="logo">\n          <img class="brand" [src]="card.logo">\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="chip">\n          <img src="assets/img/chip.png">\n        </ion-col>\n      </ion-row>\n      <ion-row class="digits">\n        <ion-col class="number">\n          {{card.a}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.b}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.c}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.d}}\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="date">\n          Expires: {{card.expires}}\n        </ion-col>\n        <ion-col class="bank">\n          {{card.bank}}\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>'/*ion-inline-end:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/home/home.html"*/
+            selector: 'page-home',template:/*ion-inline-start:"/home/kaino/ionic-credit-card/src/pages/home/home.html"*/'<ion-content padding>\n  <div *ngFor="let card of cards"  class="slide-in-both-ways">\n    <ion-grid [class.cardON]="card.state==\'ON\'" [class.cardOFF]="card.state==\'OFF\'">\n      <ion-row>\n        <ion-col class="state">\n          <div class="msg">\n            <span [class.ON]="card.state==\'ON\'" [class.OFF]="card.state==\'OFF\'"></span> Card {{card.state}}\n          </div>\n        </ion-col>\n        <ion-col class="logo">\n          <img class="brand" [src]="card.logo">\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="chip">\n          <img src="assets/img/chip.png">\n        </ion-col>\n      </ion-row>\n      <ion-row class="digits">\n        <ion-col class="number">\n          {{card.a}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.b}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.c}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.d}}\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="date">\n          Expires: {{card.expires}}\n        </ion-col>\n        <ion-col class="bank">\n          {{card.bank}}\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>'/*ion-inline-end:"/home/kaino/ionic-credit-card/src/pages/home/home.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], HomePage);
@@ -200,7 +200,7 @@ var PrivatePage = /** @class */ (function () {
     }
     PrivatePage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-private',template:/*ion-inline-start:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/private/private.html"*/'<ion-content padding>\n  <div *ngFor="let card of cards">\n    <ion-grid [class.cardON]="card.state==\'ON\'" [class.cardOFF]="card.state==\'OFF\'">\n      <ion-row>\n        <ion-col class="state">\n          <div class="msg">\n            <span [class.ON]="card.state==\'ON\'" [class.OFF]="card.state==\'OFF\'"></span> Card {{card.state}}\n          </div>\n        </ion-col>\n        <ion-col class="logo">\n          <img class="brand" [src]="card.logo">\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="chip">\n          <img src="assets/img/chip.png">\n        </ion-col>\n      </ion-row>\n      <ion-row class="digits">\n        <ion-col class="number">\n          <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>\n        </ion-col>\n        <ion-col class="number">\n          <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>\n        </ion-col>\n        <ion-col class="number">\n          <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>\n        </ion-col>\n        <ion-col class="number">\n          {{card.a}}\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="date">\n          Expires: {{card.expires}}\n        </ion-col>\n        <ion-col class="bank">\n          {{card.bank}}\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>'/*ion-inline-end:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/private/private.html"*/,
+            selector: 'page-private',template:/*ion-inline-start:"/home/kaino/ionic-credit-card/src/pages/private/private.html"*/'<ion-content padding>\n  <div *ngFor="let card of cards">\n    <ion-grid [class.cardON]="card.state==\'ON\'" [class.cardOFF]="card.state==\'OFF\'">\n      <ion-row>\n        <ion-col class="state">\n          <div class="msg">\n            <span [class.ON]="card.state==\'ON\'" [class.OFF]="card.state==\'OFF\'"></span> Card {{card.state}}\n          </div>\n        </ion-col>\n        <ion-col class="logo">\n          <img class="brand" [src]="card.logo">\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="chip">\n          <img src="assets/img/chip.png">\n        </ion-col>\n      </ion-row>\n      <ion-row class="digits">\n        <ion-col class="number">\n          <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>\n        </ion-col>\n        <ion-col class="number">\n          <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>\n        </ion-col>\n        <ion-col class="number">\n          <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>\n        </ion-col>\n        <ion-col class="number">\n          {{card.a}}\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="date">\n          Expires: {{card.expires}}\n        </ion-col>\n        <ion-col class="bank">\n          {{card.bank}}\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>'/*ion-inline-end:"/home/kaino/ionic-credit-card/src/pages/private/private.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], PrivatePage);
@@ -262,12 +262,22 @@ var MinimalPage = /** @class */ (function () {
                 d: 7846,
                 expires: '11/23',
                 bank: 'CityBank'
+            },
+            {
+                state: 'ON',
+                logo: "assets/img/mastercard.png",
+                a: 8685,
+                b: 2445,
+                c: 9143,
+                d: 7846,
+                expires: '11/23',
+                bank: 'CityBank'
             }
         ];
     }
     MinimalPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-minimal',template:/*ion-inline-start:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/minimal/minimal.html"*/'<ion-content padding>\n  <div *ngFor="let card of cards">\n    <ion-grid [class.cardON]="card.state==\'ON\'" [class.cardOFF]="card.state==\'OFF\'">\n      <ion-row>\n        <ion-col class="state">\n          <div class="msg">\n            <span [class.ON]="card.state==\'ON\'" [class.OFF]="card.state==\'OFF\'"></span>{{card.state}}\n          </div>\n        </ion-col>\n        <ion-col class="logo">\n          <img class="brand" [src]="card.logo">\n        </ion-col>\n      </ion-row>\n      <ion-row class="digits">\n        <ion-col class="number">\n          <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>\n        </ion-col>\n        <ion-col class="number">\n          <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>\n        </ion-col>\n        <ion-col class="number">\n          <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>\n        </ion-col>\n        <ion-col class="number">\n          {{card.a}}\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="date">\n          Expires: {{card.expires}}\n        </ion-col>\n        <ion-col class="bank">\n          {{card.bank}}\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>'/*ion-inline-end:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/minimal/minimal.html"*/,
+            selector: 'page-minimal',template:/*ion-inline-start:"/home/kaino/ionic-credit-card/src/pages/minimal/minimal.html"*/'<ion-content padding>\n  <div *ngFor="let card of cards">\n    <ion-grid [class.cardON]="card.state==\'ON\'" [class.cardOFF]="card.state==\'OFF\'">\n      <ion-row>\n        <ion-col class="state">\n          <div class="msg">\n            <span [class.ON]="card.state==\'ON\'" [class.OFF]="card.state==\'OFF\'"></span>{{card.state}}\n          </div>\n        </ion-col>\n        <ion-col class="logo">\n          <img class="brand" [src]="card.logo">\n        </ion-col>\n      </ion-row>\n      <ion-row class="digits">\n        <ion-col class="number">\n          <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>\n        </ion-col>\n        <ion-col class="number">\n          <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>\n        </ion-col>\n        <ion-col class="number">\n          <span class="dot"></span> <span class="dot"></span> <span class="dot"></span> <span class="dot"></span>\n        </ion-col>\n        <ion-col class="number">\n          {{card.a}}\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="date">\n          Expires: {{card.expires}}\n        </ion-col>\n        <ion-col class="bank">\n          {{card.bank}}\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>'/*ion-inline-end:"/home/kaino/ionic-credit-card/src/pages/minimal/minimal.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], MinimalPage);
@@ -342,7 +352,7 @@ var SlidingPage = /** @class */ (function () {
     };
     SlidingPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-sliding',template:/*ion-inline-start:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/sliding/sliding.html"*/'<ion-content>\n    <ion-list>\n        <ion-item-sliding *ngFor="let card of cards" #item>\n            <ion-item no-lines>\n                <ion-grid [class.cardON]="card.state==\'ON\'" [class.cardOFF]="card.state==\'OFF\'">\n                    <ion-row>\n                        <ion-col class="state">\n                            <div class="msg">\n                                <span [class.ON]="card.state==\'ON\'" [class.OFF]="card.state==\'OFF\'"></span> Card {{card.state}}\n                            </div>\n                        </ion-col>\n                        <ion-col class="logo">\n                            <img class="brand" [src]="card.logo">\n                        </ion-col>\n                    </ion-row>\n                    <ion-row>\n                        <ion-col class="chip">\n                            <img src="assets/img/chip.png">\n                        </ion-col>\n                    </ion-row>\n                    <ion-row class="digits">\n                        <ion-col class="number">\n                            {{card.a}}\n                        </ion-col>\n                        <ion-col class="number">\n                            {{card.b}}\n                        </ion-col>\n                        <ion-col class="number">\n                            {{card.c}}\n                        </ion-col>\n                        <ion-col class="number">\n                            {{card.d}}\n                        </ion-col>\n                    </ion-row>\n                    <ion-row>\n                        <ion-col class="date">\n                            Expires: {{card.expires}}\n                        </ion-col>\n                        <ion-col class="bank">\n                            {{card.bank}}\n                        </ion-col>\n                    </ion-row>\n                </ion-grid>\n            </ion-item>\n\n            <ion-item-options side="right">\n                <button ion-button icon-only large outline (click)="update(card)">\n          <ion-icon id="power" [color]="card.state==\'ON\' ? \'danger\' : \'success\'" name="power"></ion-icon>\n        </button>\n            </ion-item-options>\n\n        </ion-item-sliding>\n    </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/sliding/sliding.html"*/,
+            selector: 'page-sliding',template:/*ion-inline-start:"/home/kaino/ionic-credit-card/src/pages/sliding/sliding.html"*/'<ion-content>\n    <ion-list>\n        <ion-item-sliding *ngFor="let card of cards" #item>\n            <ion-item no-lines>\n                <ion-grid [class.cardON]="card.state==\'ON\'" [class.cardOFF]="card.state==\'OFF\'">\n                    <ion-row>\n                        <ion-col class="state">\n                            <div class="msg">\n                                <span [class.ON]="card.state==\'ON\'" [class.OFF]="card.state==\'OFF\'"></span> Card {{card.state}}\n                            </div>\n                        </ion-col>\n                        <ion-col class="logo">\n                            <img class="brand" [src]="card.logo">\n                        </ion-col>\n                    </ion-row>\n                    <ion-row>\n                        <ion-col class="chip">\n                            <img src="assets/img/chip.png">\n                        </ion-col>\n                    </ion-row>\n                    <ion-row class="digits">\n                        <ion-col class="number">\n                            {{card.a}}\n                        </ion-col>\n                        <ion-col class="number">\n                            {{card.b}}\n                        </ion-col>\n                        <ion-col class="number">\n                            {{card.c}}\n                        </ion-col>\n                        <ion-col class="number">\n                            {{card.d}}\n                        </ion-col>\n                    </ion-row>\n                    <ion-row>\n                        <ion-col class="date">\n                            Expires: {{card.expires}}\n                        </ion-col>\n                        <ion-col class="bank">\n                            {{card.bank}}\n                        </ion-col>\n                    </ion-row>\n                </ion-grid>\n            </ion-item>\n\n            <ion-item-options side="right">\n                <button ion-button icon-only large outline (click)="update(card)">\n          <ion-icon id="power" [color]="card.state==\'ON\' ? \'danger\' : \'success\'" name="power"></ion-icon>\n        </button>\n            </ion-item-options>\n\n        </ion-item-sliding>\n    </ion-list>\n\n</ion-content>\n'/*ion-inline-end:"/home/kaino/ionic-credit-card/src/pages/sliding/sliding.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], SlidingPage);
@@ -357,44 +367,9 @@ var SlidingPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var ContactPage = /** @class */ (function () {
-    function ContactPage(navCtrl) {
-        this.navCtrl = navCtrl;
-    }
-    ContactPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-contact',template:/*ion-inline-start:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/contact/contact.html"*/'<ion-content>\n  <div class="contact">\n    <img src="assets/img/ionic4themes.jpg">\n    <h3>info@ionic4themes.com</h3>\n    <ion-label>info and updates at ionic4themes.com</ion-label>\n  </div>\n</ion-content>'/*ion-inline-end:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/contact/contact.html"*/
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
-    ], ContactPage);
-    return ContactPage;
-}());
-
-//# sourceMappingURL=contact.js.map
-
-/***/ }),
-
-/***/ 199:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(200);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(222);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__ = __webpack_require__(199);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__app_module__ = __webpack_require__(221);
 
 
 Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
@@ -402,7 +377,7 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 
 /***/ }),
 
-/***/ 222:
+/***/ 221:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -410,13 +385,13 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1__angular_platform_browser__ = __webpack_require__(31);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(20);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(264);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(194);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_private_private__ = __webpack_require__(195);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_dark_dark__ = __webpack_require__(273);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_dark_dark__ = __webpack_require__(272);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_minimal_minimal__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_sliding_sliding__ = __webpack_require__(197);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_contact_contact__ = __webpack_require__(198);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_contact_contact__ = __webpack_require__(273);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_tabs_tabs__ = __webpack_require__(193);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_status_bar__ = __webpack_require__(189);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__ionic_native_splash_screen__ = __webpack_require__(192);
@@ -485,7 +460,7 @@ var AppModule = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 265:
+/***/ 264:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -520,7 +495,7 @@ var MyApp = /** @class */ (function () {
         });
     }
     MyApp = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/app/app.html"*/
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({template:/*ion-inline-start:"/home/kaino/ionic-credit-card/src/app/app.html"*/'<ion-nav [root]="rootPage"></ion-nav>\n'/*ion-inline-end:"/home/kaino/ionic-credit-card/src/app/app.html"*/
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
     ], MyApp);
@@ -531,7 +506,7 @@ var MyApp = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 273:
+/***/ 272:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -587,7 +562,7 @@ var DarkPage = /** @class */ (function () {
     }
     DarkPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-dark',template:/*ion-inline-start:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/dark/dark.html"*/'<ion-content color=red padding>\n  <div *ngFor="let card of cards">\n    <ion-grid [class.cardON]="card.state==\'ON\'" [class.cardOFF]="card.state==\'OFF\'">\n      <ion-row>\n        <ion-col class="state">\n          <div class="msg">\n            <span [class.ON]="card.state==\'ON\'" [class.OFF]="card.state==\'OFF\'"></span> Card {{card.state}}\n          </div>\n        </ion-col>\n        <ion-col class="logo">\n          <img class="brand" [src]="card.logo">\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="chip">\n          <img src="assets/img/chip.png">\n        </ion-col>\n      </ion-row>\n      <ion-row class="digits">\n        <ion-col class="number">\n          {{card.a}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.b}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.c}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.d}}\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="date">\n          Expires: {{card.expires}}\n        </ion-col>\n        <ion-col class="bank">\n          {{card.bank}}\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>'/*ion-inline-end:"/Users/yoshi1125hisa/Desktop/credit-card-concept-free/src/pages/dark/dark.html"*/,
+            selector: 'page-dark',template:/*ion-inline-start:"/home/kaino/ionic-credit-card/src/pages/dark/dark.html"*/'<ion-content color=red padding>\n  <div *ngFor="let card of cards">\n    <ion-grid [class.cardON]="card.state==\'ON\'" [class.cardOFF]="card.state==\'OFF\'">\n      <ion-row>\n        <ion-col class="state">\n          <div class="msg">\n            <span [class.ON]="card.state==\'ON\'" [class.OFF]="card.state==\'OFF\'"></span> Card {{card.state}}\n          </div>\n        </ion-col>\n        <ion-col class="logo">\n          <img class="brand" [src]="card.logo">\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="chip">\n          <img src="assets/img/chip.png">\n        </ion-col>\n      </ion-row>\n      <ion-row class="digits">\n        <ion-col class="number">\n          {{card.a}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.b}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.c}}\n        </ion-col>\n        <ion-col class="number">\n          {{card.d}}\n        </ion-col>\n      </ion-row>\n      <ion-row>\n        <ion-col class="date">\n          Expires: {{card.expires}}\n        </ion-col>\n        <ion-col class="bank">\n          {{card.bank}}\n        </ion-col>\n      </ion-row>\n    </ion-grid>\n  </div>\n</ion-content>'/*ion-inline-end:"/home/kaino/ionic-credit-card/src/pages/dark/dark.html"*/,
         }),
         __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
     ], DarkPage);
@@ -596,7 +571,42 @@ var DarkPage = /** @class */ (function () {
 
 //# sourceMappingURL=dark.js.map
 
+/***/ }),
+
+/***/ 273:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ContactPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(20);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var ContactPage = /** @class */ (function () {
+    function ContactPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    ContactPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-contact',template:/*ion-inline-start:"/home/kaino/ionic-credit-card/src/pages/contact/contact.html"*/'<ion-content>\n  <div class="contact">\n    <img src="assets/img/ionic4themes.jpg">\n    <h3>info@ionic4themes.com</h3>\n    <ion-label>info and updates at ionic4themes.com</ion-label>\n  </div>\n</ion-content>'/*ion-inline-end:"/home/kaino/ionic-credit-card/src/pages/contact/contact.html"*/
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+    ], ContactPage);
+    return ContactPage;
+}());
+
+//# sourceMappingURL=contact.js.map
+
 /***/ })
 
-},[199]);
+},[198]);
 //# sourceMappingURL=main.js.map

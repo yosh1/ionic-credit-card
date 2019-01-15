@@ -7,10 +7,12 @@ import { NavController } from 'ionic-angular';
 })
 
 export class HomePage {
+ 
 
-  public cards: any;
+    public cards: any;
 
   constructor(public navCtrl: NavController) {
+
 
     this.cards = [
       {
@@ -46,5 +48,4 @@ export class HomePage {
     ];
 
   }
-
 }
